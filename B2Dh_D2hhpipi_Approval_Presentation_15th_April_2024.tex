@@ -264,6 +264,23 @@
   \end{enumerate}
 \end{frame}
 
+\begin{frame}{Inputs to $D^0\to K^+K^-\pi^+\pi^-$ mode}
+  \vspace{0.0cm}
+  \begin{center}
+    \begin{tikzpicture}[node distance=2cm]
+      \node(n1)[rectangle,fill=green!20,rounded corners,draw=black,midway,minimum height=1cm,minimum width=2cm,align=left]{\small LHCb: Amplitude model\\~\scriptsize JHEP \textbf{02} (2019) 126};
+      \node(n3)[rectangle,fill=Cerulean!30,rounded corners,draw=black,minimum height=1cm,below of=n1,minimum width=2cm,align=left]{\small BESIII: Strong phases\\~\scriptsize arXiv:2502.12873};
+      \node(n2)[rectangle,fill=red!30,rounded corners,draw=black,minimum height=1cm,right of=n3,minimum width=2cm,align=left,xshift=3cm]{\small LHCb: Model-dependent $\gamma$\\~\scriptsize Eur. Phys. J. C \textbf{83} (2023) 547};
+      \node(n4)[rectangle,fill=black!20,rounded corners,draw=black,minimum height=1cm,below of=n3,minimum width=2cm,align=left]{\small This analysis!};
+      \draw[->,line width=0.5mm](n1)--(n2);
+      \draw[->,line width=0.5mm](n1)--(n3);
+      \draw[->,line width=0.5mm](n2)--(n4);
+      \draw[->,line width=0.5mm](n3)--(n4);
+    \end{tikzpicture}
+  \end{center}
+  \vspace{0.0cm}
+\end{frame}
+
 \begin{frame}{Previous studies of $\gamma$ with $B^\pm\to DK^\pm$, $D\to\pi^+\pi^-\pi^+\pi^-$}
   \vspace{0.0cm}
   \begin{enumerate}
@@ -277,17 +294,51 @@
       \item{\href{https://arxiv.org/abs/1709.03467}{JHEP \textbf{01} (2018) 144}}
       \item{Expected $\gamma$ statistical (systematic) precision with $2\times 5$ bins is $9.7^\circ$ ($7.4^\circ$)}
     \end{itemize}
-    \item{Recent work by Bristol group:}
-    \begin{itemize}
-      \item{\href{https://indico.cern.ch/event/1407261/contributions/5914917/}{B2OC meeting, 18th April 2024}}
-    \end{itemize}
     \item{For this LHCb publication:}
     \begin{itemize}
-      \item{New amplitude model from BESIII \href{https://arxiv.org/abs/2312.02524}{arXiv:2312.02524}}
-      \item{Joint effort to analysis of LHCb data by Oxford/Bristol using an optimal binning scheme based on new model}
-      \item{Comparison between BESIII and CLEO-c binning scheme}
+      \item{New amplitude model from BESIII \href{https://iopscience.iop.org/article/10.1088/1674-1137/ad3d4d}{Chin. Phys. C \textbf{48} (2024) 083001}}
+      \item{$\to$ Motivation to perform $c_i$/$s_i$ measurements using a new binning scheme \href{https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.112008}{Phys. Rev. D \textbf{110} (2024) 112008}}
+      \item{Results presented from both CLEO-c and BESIII binning schemes}
+      \item{Selection unified between Bristol and Oxford}
     \end{itemize}
   \end{enumerate}
+\end{frame}
+
+\begin{frame}{Inputs to $D^0\to\pi^+\pi^-\pi^+\pi^-$ mode}
+  \vspace{0.0cm}
+  \begin{center}
+    \begin{tikzpicture}[node distance=2cm]
+      \node(n1)[rectangle,fill=green!20,rounded corners,draw=black,midway,minimum height=1cm,minimum width=2cm,align=left]{\small CLEO-c: Amplitude model\\~\scriptsize JHEP \textbf{05} (2017) 143};
+      \node(n2)[rectangle,fill=green!20,rounded corners,draw=black,midway,minimum height=1cm,minimum width=2cm,align=left,right of=n1,xshift=5cm]{\small BESIII: Amplitude model\\~\scriptsize Chin. Phys. C \textbf{48} (2024) 083001};
+      \node(n3)[rectangle,fill=Cerulean!30,rounded corners,draw=black,minimum height=1cm,below of=n1,minimum width=2cm,align=left]{\small CLEO-c: Strong phases\\~\scriptsize JHEP \textbf{01} (2018) 144};
+      \node(n4)[rectangle,fill=Cerulean!30,rounded corners,draw=black,minimum height=1cm,below of=n2,minimum width=2cm,align=left]{\small BESIII: Strong phases\\~\scriptsize Phys. Rev. D \textbf{110} (2024) 112008};
+      \node(n5)[rectangle,fill=black!20,rounded corners,draw=black,minimum height=1cm,below of=n4,minimum width=2cm,xshift=-3.5cm,align=left]{\small This analysis!};
+      \draw[->,line width=0.5mm](n1)--(n3);
+      \draw[->,line width=0.5mm](n2)--(n4);
+      \draw[->,line width=0.5mm](n3)--(n5);
+      \draw[->,line width=0.5mm](n4)--(n5);
+    \end{tikzpicture}
+  \end{center}
+  \vspace{0.0cm}
+\end{frame}
+
+\begin{frame}{Selection of $B^\pm\to DK^\pm$, $D\to\pi^+\pi^-\pi^+\pi^-$}
+  \vspace{0.0cm}
+  {Selection of $B^\pm\to[\pi^+\pi^-\pi^+\pi^-]_D h^\pm$ is mostly similar to that in phase-space integrated measurement \href{https://link.springer.com/article/10.1140/epjc/s10052-023-11560-5}{Eur. Phys. J. C \textbf{83} 547 (2023)}}
+  \vspace{0.5cm}
+  \begin{itemize}
+    \setlength\itemsep{2.0em}
+    \item{Minor differences adapted for binned measurement:}
+    \item{Flight significance cut loosened from $4$ to $2$}
+    \begin{itemize}
+      \item{Phase-space binned analysis is less sensitive to charmless background}
+    \end{itemize}
+    \item{Hadrons from $D^0$: \texttt{ProbNNpi*(1-ProbNNk) > 0.05}}
+    \begin{itemize}
+      \item{Highly efficient at rejecting combinatorial background}
+      \item{Phase-space binned analysis benefits from higher purity in low-yield bins}
+    \end{itemize}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Phase-space integrated CP observables}
